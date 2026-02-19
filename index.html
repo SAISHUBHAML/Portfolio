@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAISHUBHAM LAISETTI | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Floating Side Navbar -->
+<div class="side-nav">
+    <a href="#home"><i class="fas fa-home"></i></a>
+    <a href="#about"><i class="fas fa-user"></i></a>
+    <a href="#projects"><i class="fas fa-briefcase"></i></a>
+    <a href="#contact"><i class="fas fa-envelope"></i></a>
+    <a href="https://github.com/SAISHUBHAML" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/saishubham-laisetti/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <button id="theme-toggle"><i class="fas fa-moon"></i></button>
+</div>
+
+<!-- HERO -->
+<section class="hero section" id="home">
+    <div class="green-shape"></div>
+    <div class="hero-container">
+
+        <div class="hero-image">
+            <div class="image-box">
+                <img src="profile.jpg" alt="Subbu">
+            </div>
+        </div>
+
+        <div class="hero-text">
+            <h1>
+                Hi, I'm <span class="highlight">SAISHUBHAM</span><br>
+                but you can call me <span class="highlight">Subbu</span>.
+            </h1>
+
+            <h2 class="typing"></h2>
+
+            <p>
+                M.Tech Student in Computer Science at IIT Hyderabad, working in theoretical computer science with focus on algorithms, complexity theory, and mathematical foundations of computing.
+
+            </p>
+
+            <div class="buttons">
+                <button class="btn" id="openCV">View CV</button>
+
+                <a href="#contact" class="btn-outline">Contact</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section fade-in" id="about">
+    <h2>About Me</h2>
+    <p>
+    I am currently pursuing M.Tech in Computer Science at IIT Hyderabad.
+    My research interests lie in theoretical computer science,
+    algorithm design, computational complexity, and rigorous mathematical
+    analysis of computation models.
+    
+    I enjoy solving challenging problems that require deep analytical
+    thinking and strong mathematical foundations.
+    </p>
+
+</section>
+
+<!-- RESEARCH INTERESTS -->
+<section class="section fade-in" id="research">
+    <h2>Research Interests</h2>
+
+    <div class="research-tags">
+        <span>Computational Complexity</span>
+        <span>Algorithm Design</span>
+        <span>Dimensionality Reduction</span>
+        <span>Randomized Algorithms</span>
+        <span>Mathematical Foundations of Computing</span>
+    </div>
+</section>
+
+<!-- PUBLICATIONS -->
+<section class="section fade-in" id="publications">
+    <h2>Research Publications</h2>
+
+    <div class="publication">
+        <p><strong>Title of Paper</strong><br>
+        Conference/Journal Name, Year<br>
+        <a href="#">View Paper</a></p>
+    </div>
+
+    <!-- Add more when needed -->
+
+</section>
+
+<!-- COURSEWORK -->
+<section class="section fade-in" id="coursework">
+    <h2>Relevant Coursework</h2>
+
+    <ul class="course-list">
+        <li>Advanced Algorithms</li>
+        <li>Computational Complexity</li>
+        <li>Distributed Systems</li>
+        <li>Cryptography</li>
+        <li>Advanced Data Structures</li>
+    </ul>
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section class="section fade-in" id="achievements">
+    <h2>Achievements</h2>
+
+    <ul class="achievement-list">
+        <li>Qualified GATE (if applicable)</li>
+        <li>Top performer in Algorithms coursework</li>
+        <li>Competitive Programming Experience</li>
+        <li>Research Assistantship at IIT Hyderabad</li>
+    </ul>
+</section>
+
+<!-- PROJECTS -->
+<section class="section fade-in" id="projects">
+    <h2>Projects</h2>
+
+    <div class="project-card">
+        <h3>Random Projection Matching System</h3>
+        <p>
+            Built a C++ system analyzing dimensionality reduction
+            impact on nearest neighbor matching accuracy.
+        </p>
+    </div>
+
+    <div class="project-card">
+        <h3>Federated Distribution Shift Study</h3>
+        <p>
+            Studied label and feature shift in federated medical imaging
+            environments.
+        </p>
+    </div>
+
+    <div class="project-card">
+        <h3>Algorithmic Problem Solving</h3>
+        <p>
+            Solved graph and optimization problems using efficient
+            C++ implementations.
+        </p>
+    </div>
+
+</section>
+
+<!-- SKILLS -->
+<section class="section fade-in" id="skills">
+    <h2>Technical Skills</h2>
+
+    <div class="skill">
+        <p>C++</p>
+        <div class="progress-bar">
+            <div class="progress" data-width="70%"></div>
+        </div>
+    </div>
+
+    <div class="skill">
+        <p>Algorithms & Data Structures</p>
+        <div class="progress-bar">
+            <div class="progress" data-width="60%"></div>
+        </div>
+    </div>
+
+    <div class="skill">
+        <p>Theoretical Computer Science</p>
+        <div class="progress-bar">
+            <div class="progress" data-width="50%"></div>
+        </div>
+    </div>
+
+    <div class="skill">
+        <p>Python</p>
+        <div class="progress-bar">
+            <div class="progress" data-width="55%"></div>
+        </div>
+    </div>
+
+</section>
+
+
+<!-- CONTACT -->
+<section class="section fade-in" id="contact">
+    <h2>Contact</h2>
+    <p>Email: saishubhamlaisetti@gmail.com</p>
+    <p>GitHub: https://github.com/SAISHUBHAML/</p>
+    <p>LinkedIn: https://www.linkedin.com/in/saishubham-laisetti/</p>
+</section>
+
+<script src="script.js"></script>
+
+<!-- CV MODAL -->
+<div class="cv-modal" id="cvModal">
+    <div class="cv-content">
+        <span class="close-btn" id="closeCV">&times;</span>
+        <iframe src="resume.pdf" width="100%" height="500px"></iframe>
+    </div>
+</div>
+
+</body>
+</html>
