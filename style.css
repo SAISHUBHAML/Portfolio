@@ -9,43 +9,50 @@ html {
 }
 
 body {
-    font-family: 'Segoe UI', sans-serif;
+    font-family: 'Georgia', serif;
     background: #0f172a;
     color: #e2e8f0;
     transition: 0.3s;
 }
 
-/* Sections */
+/* ================= SECTIONS ================= */
+
 .section {
-    padding: 100px 10%;
+    width: 100%;
+    padding: 10vh 8vw;
 }
 
 .section h2 {
     font-size: 36px;
     margin-bottom: 30px;
-    color: #38bdf8
-;
+    color: #22c55e;
+}
+
+.section h3 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #22c55e;
 }
 
 .section p {
-    max-width: 700px;
     line-height: 1.8;
-    color: #cbd5e1;
 }
 
-/* Side Navbar */
+/* ================= SIDEBAR ================= */
+
 .side-nav {
     position: fixed;
-    right: 25px;
+    right: 2vw;
     top: 50%;
     transform: translateY(-50%);
     display: flex;
     flex-direction: column;
     gap: 18px;
-    z-index: 100;
+    z-index: 9999;
 }
 
-.side-nav a, .side-nav button {
+.side-nav a,
+.side-nav button {
     width: 45px;
     height: 45px;
     border-radius: 50%;
@@ -60,37 +67,71 @@ body {
     transition: 0.3s;
 }
 
-.side-nav a:hover, .side-nav button:hover {
+.side-nav a:hover,
+.side-nav button:hover {
     background: #22c55e;
     color: black;
 }
 
-/* Hero */
+.side-nav a.active {
+    background: #38bdf8;
+    color: white;
+}
+
+/* ================= HERO ================= */
+
 .hero {
     min-height: 100vh;
     display: flex;
     align-items: center;
     position: relative;
+    overflow: hidden;
 }
 
 .hero-container {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
+    width: 100%;
     display: flex;
-    gap: 60px;
     align-items: center;
+    justify-content: space-between;   /* important */
+    gap: 6vw;
+    position: relative;
+    z-index: 1;
+    padding-left: 6vw;   /* pushes image slightly right */
+    padding-right: 8vw;
 }
+.hero-text {
+    flex: 1;
+    min-width: 0;
+    text-align: left;   /* NOT center */
+}
+
+.hero-text h1 {
+    font-size: 46px;
+}
+
+.hero-text h2 {
+    margin-top: 15px;
+    color: #22c55e;
+}
+
+.hero-text p {
+    margin-top: 20px;
+}
+
+/* Green Shape (Desktop Only) */
 
 .green-shape {
     position: absolute;
     left: 0;
-    width: 300px;
+    top: 0;
+    width: 22%;
     height: 100%;
     background: #22c55e;
     clip-path: polygon(0 0, 100% 0, 70% 100%, 0% 100%);
-    z-index: -1;
+    z-index: 0;
 }
+
+/* Image */
 
 .image-box {
     background: #111827;
@@ -108,28 +149,13 @@ body {
     border-radius: 15px;
 }
 
-.hero-text h1 {
-    font-size: 46px;
-}
-
-.highlight {
-    color: #22c55e;
-}
-
-.hero-text h2 {
-    margin-top: 15px;
-    color: #22c55e;
-}
-
-.hero-text p {
-    margin-top: 20px;
-    max-width: 500px;
-}
+/* Buttons */
 
 .buttons {
     margin-top: 30px;
     display: flex;
     gap: 20px;
+    justify-content: flex-start;   /* align with text */
 }
 
 .btn {
@@ -149,70 +175,26 @@ body {
     text-decoration: none;
 }
 
-/* Project Cards */
-.project-card {
+.highlight {
+    color: #22c55e;
+}
+
+/* ================= CARDS ================= */
+
+.project-card,
+.publication,
+.course-list li,
+.achievement-list li {
     background: #1e293b;
-    padding: 25px;
-    margin-bottom: 25px;
-    border-radius: 15px;
-    transition: 0.3s;
+    border-radius: 10px;
+    padding: 18px;
+    margin-bottom: 20px;
 }
 
-.project-card:hover {
-    transform: translateY(-5px);
-}
+/* ================= SKILLS ================= */
 
-/* Fade Animation */
-.fade-in {
-    opacity: 0;
-    transform: translateY(40px);
-    transition: 1s ease;
-}
-
-.fade-in.show {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* Responsive */
-@media (max-width: 900px) {
-    .hero-container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .image-box {
-        width: 280px;
-        height: 350px;
-    }
-
-    .hero-text h1 {
-        font-size: 34px;
-    }
-
-    .side-nav {
-        right: 10px;
-    }
-}
-
-/* Light Mode */
-.light-mode {
-    background: white;
-    color: black;
-}
-
-.light-mode .project-card {
-    background: #f3f4f6;
-}
-
-/* Skills */
 .skill {
     margin-bottom: 25px;
-}
-
-.skill p {
-    margin-bottom: 8px;
-    font-weight: 600;
 }
 
 .progress-bar {
@@ -231,6 +213,7 @@ body {
     transition: width 1.5s ease;
 }
 
+/* ================= RESEARCH TAGS ================= */
 
 .research-tags {
     display: flex;
@@ -243,9 +226,9 @@ body {
     background: #1e293b;
     border-radius: 20px;
     font-size: 14px;
-    transition: 0.3s;
     opacity: 0;
     transform: translateY(20px);
+    transition: 0.3s;
 }
 
 .research-tags span.show {
@@ -253,41 +236,13 @@ body {
     transform: translateY(0);
 }
 
-.publication {
-    margin-bottom: 25px;
-    padding: 20px;
-    background: #1e293b;
-    border-radius: 10px;
-}
-
-.course-list {
-    list-style: none;
-}
-
-.course-list li {
-    margin-bottom: 12px;
-    padding: 10px 15px;
-    background: #1e293b;
-    border-radius: 8px;
-}
-
-.achievement-list {
-    list-style: none;
-}
-
-.achievement-list li {
-    margin-bottom: 12px;
-    padding: 12px 18px;
-    background: #1e293b;
-    border-left: 4px solid #38bdf8;
-    border-radius: 6px;
-}
+/* ================= MODAL ================= */
 
 .cv-modal {
     display: none;
     position: fixed;
     inset: 0;
-    background: rgba(0,0,0,0.7);
+    background: rgba(0, 0, 0, 0.7);
     justify-content: center;
     align-items: center;
     z-index: 200;
@@ -295,7 +250,7 @@ body {
 
 .cv-content {
     background: #0f172a;
-    width: 80%;
+    width: 85%;
     max-width: 800px;
     padding: 20px;
     border-radius: 10px;
@@ -306,4 +261,68 @@ body {
     font-size: 24px;
     cursor: pointer;
     color: white;
+}
+
+/* ================= CONTACT ================= */
+
+.contact-minimal {
+    font-size: 16px;
+}
+
+.contact-minimal a {
+    text-decoration: none;
+    color: #38bdf8;
+    font-weight: 500;
+}
+
+/* ================= LIGHT MODE ================= */
+
+.light-mode {
+    background: #ffffff;
+    color: #000000;
+}
+
+.light-mode .project-card,
+.light-mode .publication,
+.light-mode .course-list li,
+.light-mode .achievement-list li,
+.light-mode .progress-bar,
+.light-mode .research-tags span {
+    background: #f3f4f6;
+    color: #000000;
+}
+
+.light-mode .cv-content {
+    background: #ffffff;
+}
+
+.light-mode .contact-minimal a {
+    color: #2563eb;
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 900px) {
+
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image-box {
+        width: 260px;
+        height: 320px;
+    }
+
+    .hero-text h1 {
+        font-size: 32px;
+    }
+
+    .green-shape {
+        display: none;
+    }
+
+    .side-nav {
+        right: 10px;
+    }
 }
