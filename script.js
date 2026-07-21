@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Typing Effect
     const typingElement = document.querySelector(".typing");
     if (typingElement) {
-        const text = "Working in Theoretical Computer Science.";
+        const text = "I am a member of Scalable Algorithms for Large-Scale Data (ScaleX) Lab.";
         let index = 0;
 
         function typeEffect() {
