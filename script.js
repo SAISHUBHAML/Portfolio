@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Translation Data
     const translations = {
         en: {
+            iith_badge: `<i class="fas fa-graduation-cap"></i> IIT HYDERABAD`,
             hero_title: `Hi, I'm <span class="highlight">SAISHUBHAM</span><br>but you can call me <span class="highlight">Subbu</span>.`,
             typing_text: "I am a member of Scalable Algorithms for Large-Scale Data (ScaleX) Lab.",
             hero_desc: "M.Tech Student in Department of Computer Science at IIT Hyderabad, working in theoretical computer science with focus on algorithms, complexity theory, and mathematical foundations of computing.",
@@ -49,7 +50,9 @@ document.addEventListener("DOMContentLoaded", function () {
             contact_title: "Contact"
         },
         ja: {
+            iith_badge: `<i class="fas fa-graduation-cap"></i> インド工科大学ハイデラバード校`,
             hero_title: `こんにちは、<span class="highlight">サイシュバム</span>です。<br>気軽に <span class="highlight">Subbu</span> とお呼びください。`,
+
             typing_text: "大規模データ向けスケーラブルアルゴリズム（ScaleX）研究室に所属しています。",
             hero_desc: "インド工科大学（IIT）ハイデラバード校 コンピュータサイエンス学科 M.Tech（修士課程）在学中。理論コンピュータサイエンス、アルゴリズム、計算複雑性理論、計算の数学的基礎を専攻。",
             btn_cv: "CVを見る",
