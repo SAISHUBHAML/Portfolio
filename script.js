@@ -249,13 +249,36 @@ document.addEventListener("DOMContentLoaded", function () {
     if (modal && openBtn && closeBtn) {
         openBtn.onclick = () => modal.style.display = "flex";
         closeBtn.onclick = () => modal.style.display = "none";
-
-        window.onclick = function (event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        };
     }
+
+    // Marathon Certificate Modal (Event Delegation)
+    document.addEventListener("click", function (e) {
+        const openCertTarget = e.target.closest("#openCert");
+        if (openCertTarget) {
+            e.preventDefault();
+            const certModal = document.getElementById("certModal");
+            if (certModal) certModal.style.display = "flex";
+            return;
+        }
+
+        const closeCertTarget = e.target.closest("#closeCert");
+        if (closeCertTarget) {
+            const certModal = document.getElementById("certModal");
+            if (certModal) certModal.style.display = "none";
+            return;
+        }
+
+        const modal = document.getElementById("cvModal");
+        const certModal = document.getElementById("certModal");
+        if (modal && e.target == modal) {
+            modal.style.display = "none";
+        }
+        if (certModal && e.target == certModal) {
+            certModal.style.display = "none";
+        }
+    });
+
+
 
     // Active Sidebar Highlight
     const sections = document.querySelectorAll("section");
