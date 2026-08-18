@@ -11,6 +11,10 @@
 
 <!-- Floating Side Navbar -->
 <div class="side-nav">
+    <div class="lang-nav-item">
+        <button id="lang-toggle" title="Tap button for 日本語" aria-label="Language Toggle">日</button>
+        <span class="lang-tooltip" id="lang-tooltip-text">Tap for 日本語</span>
+    </div>
     <a href="#home"><i class="fas fa-home"></i></a>
     <a href="#about"><i class="fas fa-user"></i></a>
     <a href="#research"><i class="fas fa-microscope"></i></a>
@@ -18,8 +22,9 @@
     <a href="#projects"><i class="fas fa-code"></i></a>
     <!-- <a href="#skills"><i class="fas fa-chart-bar"></i></a> -->
     <a href="#contact"><i class="fas fa-envelope"></i></a>
-    <button id="theme-toggle"><i class="fas fa-moon"></i></button>
+    <button id="theme-toggle" title="Toggle Theme"><i class="fas fa-moon"></i></button>
 </div>
+
 
 <!-- HERO -->
 <section class="hero section" id="home">
@@ -33,22 +38,21 @@
         </div>
 
         <div class="hero-text">
-            <h1>
+            <h1 data-i18n="hero_title">
                 Hi, I'm <span class="highlight">SAISHUBHAM</span><br>
                 but you can call me <span class="highlight">Subbu</span>.
             </h1>
 
             <h2 class="typing"></h2>
 
-            <p>
+            <p data-i18n="hero_desc">
                 M.Tech Student in Department of Computer Science at IIT Hyderabad, working in theoretical computer science with focus on algorithms, complexity theory, and mathematical foundations of computing.
-
             </p>
 
             <div class="buttons">
-                <button class="btn" id="openCV">View CV</button>
+                <button class="btn" id="openCV" data-i18n="btn_cv">View CV</button>
 
-                <a href="#contact" class="btn-outline">Contact</a>
+                <a href="#contact" class="btn-outline" data-i18n="btn_contact">Contact</a>
             </div>
         </div>
 
@@ -57,8 +61,8 @@
 
 <!-- ABOUT -->
 <section class="section fade-in" id="about">
-    <h2>About Me</h2>
-    <p>
+    <h2 data-i18n="about_title">About Me</h2>
+    <p data-i18n="about_desc">
     I am currently pursuing M.Tech in Computer Science at IIT Hyderabad.
     My research interests lie in theoretical computer science,
     algorithm design, computational complexity, and rigorous mathematical
@@ -72,21 +76,21 @@
 
 <!-- RESEARCH INTERESTS -->
 <section class="section fade-in" id="research">
-    <h2>Research</h2>
+    <h2 data-i18n="research_title">Research</h2>
 
-    <h3>Research Interests</h3>
+    <h3 data-i18n="research_interests_title">Research Interests</h3>
     <div class="research-tags">
-        <span>Complexity Theory</span>
-        <span>Mathematical Foundations of Computing</span>
-        <span>Dimensionality Reduction</span>
-        <span>Randomized Algorithms</span>
+        <span data-i18n="tag_complexity">Complexity Theory</span>
+        <span data-i18n="tag_math">Mathematical Foundations of Computing</span>
+        <span data-i18n="tag_dim_red">Dimensionality Reduction</span>
+        <span data-i18n="tag_rand_algo">Randomized Algorithms</span>
     </div>
 
-    <h3 style="margin-top:50px;">Publications</h3>
+    <h3 style="margin-top:50px;" data-i18n="publications_title">Publications</h3>
     
     <div class="publication">
         <p>
-            Pranit Narendra Muttha , Siddharth Mohan Lanke, Abhishek Vanshiv, Saishubham Laisetti, Swati Joshi<br><i>Drowsiness Detection System: Stay Alert Stay Alive.</i>
+            Pranit Narendra Muttha , Siddharth Mohan Lanke, Abhishek Vanshiv, Saishubham Laisetti, Swati Joshi<br><i><span data-i18n="pub1_title">Drowsiness Detection System: Stay Alert Stay Alive.</span></i>
             International Journal of Novel Research and Development.
             <a href="https://ijnrd.org/papers/IJNRD2311071.pdf" target="_blank">
                 [PDF]
@@ -97,72 +101,63 @@
     <!-- Add more when needed -->
 </section>
 
-<!-- PUBLICATIONS
-<section class="section fade-in" id="publications">
-    <h2>Research Publications</h2>
-
-    <div class="publication">
-        <p><strong>Drowsiness Detection System: Stay Alert Stay
-Alive</strong><br>
-            <p>Pranit Narendra Muttha1
-, Siddharth Mohan Lanke2
-, Abhishek Rahul Vanshiv3
-, <b>Saishubham Laisetti4</b>
-, Swati
-Joshi5</p>
-        INTERNATIONAL JOURNAL OF NOVEL RESEARCH
-AND DEVELOPMENT, 2023<br>
-        <a href="https://ijnrd.org/papers/IJNRD2311071.pdf">View Paper</a></p>
-    </div>
-
-
-</section> -->
 <!-- ACADEMICS -->
 <section class="section fade-in" id="academics">
-    <h2>Academics</h2>
+    <h2 data-i18n="academics_title">Academics</h2>
 
-    <h3>Relevant Coursework</h3>
+    <h3 data-i18n="coursework_title">Relevant Coursework</h3>
     <ul class="course-list">
-        <li><strong>Advanced Data Structures and Algorithms</strong></li>
-        <li><strong>Foundations of Machine Learning</strong></li>
-        <li><strong>Tensor: Techniques, Algorithms and Applications</strong></li>
-        <li><strong>Representation Learning</strong></li>
-        <li><strong>Linear Optimization</strong></li>
+        <li><strong data-i18n="course1">Advanced Data Structures and Algorithms</strong></li>
+        <li><strong data-i18n="course2">Foundations of Machine Learning</strong></li>
+        <li><strong data-i18n="course3">Tensor: Techniques, Algorithms and Applications</strong></li>
+        <li><strong data-i18n="course4">Representation Learning</strong></li>
+        <li><strong data-i18n="course5">Linear Optimization</strong></li>
     </ul>
 
-    <h3 style="margin-top:50px;">Achievements</h3>
+    <h3 style="margin-top:50px;" data-i18n="achievements_title">Achievements</h3>
     <ul class="achievement-list">
-        <li>Gold Medalist – College Athletics (800m & 1500m)</li>
-        <li>Participant – Inter IIT Sports Meet</li>
-        <li>Solved 200+ algorithmic problems across competitive programming platforms</li>
-        <li>Research Assistantship – IIT Hyderabad</li>
-        <li>Full Marathon Finisher</li>
+        <li data-i18n="achieve1">Gold Medalist – College Athletics (800m & 1500m)</li>
+        <li data-i18n="achieve2">Participant – Inter IIT Sports Meet</li>
+        <li data-i18n="achieve3">Solved 200+ algorithmic problems across competitive programming platforms</li>
+        <li data-i18n="achieve4">Research Assistantship – IIT Hyderabad</li>
+        <li data-i18n="achieve5">Full Marathon Finisher</li>
     </ul>
 </section>
 
 <!-- PROJECTS -->
 <section class="section fade-in" id="projects">
-    <h2>Projects</h2>
+    <h2 data-i18n="projects_title">Projects</h2>
 
     <div class="project-card">
-        <h3>Random Projection Matching System</h3>
-        <p>
+        <h3 data-i18n="proj0_title">Autonomous Driving Perception & Tracking Stack</h3>
+        <p data-i18n="proj0_desc">
+            Built a modular ROS2 autonomous driving pipeline integrating YOLOv8 2D detection, LiDAR processing (RANSAC + DBSCAN), EKF sensor fusion, ByteTrack 3D tracking, and Hybrid A* motion planning evaluated across real-world benchmark datasets.
+        </p>
+        <p style="margin-top: 12px;">
+            🔗 <a href="https://github.com/SAISHUBHAML/Autonomous-driving-perception-benchmark" target="_blank" style="color: #38bdf8; text-decoration: none; font-weight: 500;" data-i18n="view_repo">View Repository</a>
+        </p>
+    </div>
+
+    <div class="project-card">
+        <h3 data-i18n="proj1_title">Random Projection Matching System</h3>
+
+        <p data-i18n="proj1_desc">
             Built a C++ system analyzing dimensionality reduction
             impact on nearest neighbor matching accuracy.
         </p>
     </div>
 
     <div class="project-card">
-        <h3>Federated Distribution Shift Study</h3>
-        <p>
+        <h3 data-i18n="proj2_title">Federated Distribution Shift Study</h3>
+        <p data-i18n="proj2_desc">
             Studied label and feature shift in federated medical imaging
             environments.
         </p>
     </div>
 
     <div class="project-card">
-        <h3>Algorithmic Problem Solving</h3>
-        <p>
+        <h3 data-i18n="proj3_title">Algorithmic Problem Solving</h3>
+        <p data-i18n="proj3_desc">
             Solved graph and optimization problems using efficient
             C++ implementations.
         </p>
@@ -172,31 +167,31 @@ AND DEVELOPMENT, 2023<br>
 
 <!-- SKILLS -->
 <section class="section fade-in" id="skills">
-    <h2>Technical Skills</h2>
+    <h2 data-i18n="skills_title">Technical Skills</h2>
 
     <div class="skill">
-        <p>C++</p>
+        <p data-i18n="skill1">C++</p>
         <div class="progress-bar">
             <div class="progress" data-width="70%"></div>
         </div>
     </div>
 
     <div class="skill">
-        <p>Algorithms & Data Structures</p>
+        <p data-i18n="skill2">Algorithms & Data Structures</p>
         <div class="progress-bar">
             <div class="progress" data-width="60%"></div>
         </div>
     </div>
 
     <div class="skill">
-        <p>Theoretical Computer Science</p>
+        <p data-i18n="skill3">Theoretical Computer Science</p>
         <div class="progress-bar">
             <div class="progress" data-width="50%"></div>
         </div>
     </div>
 
     <div class="skill">
-        <p>Python</p>
+        <p data-i18n="skill4">Python</p>
         <div class="progress-bar">
             <div class="progress" data-width="55%"></div>
         </div>
@@ -207,7 +202,7 @@ AND DEVELOPMENT, 2023<br>
 
 <!-- CONTACT -->
 <section class="section fade-in" id="contact">
-    <h2>Contact</h2>
+    <h2 data-i18n="contact_title">Contact</h2>
 
     <div class="contact-minimal">
         <p>
