@@ -420,6 +420,47 @@ body {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
+.cert-modal-content {
+    max-width: 650px;
+    padding: 20px;
+    text-align: center;
+}
+
+.cert-img {
+    width: 100%;
+    height: auto;
+    max-height: 65vh;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    margin-top: 10px;
+}
+
+.cert-actions {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.cert-pdf-btn {
+    padding: 10px 24px;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: linear-gradient(135deg, #fb923c, #f59e0b);
+    color: #0f172a;
+    border-radius: 8px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cert-pdf-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(251, 146, 60, 0.4);
+}
+
 .close-btn {
     float: right;
     font-size: 26px;
@@ -428,6 +469,7 @@ body {
 }
 
 /* ================= CONTACT ================= */
+
 
 .contact-minimal {
     font-size: 16px;
