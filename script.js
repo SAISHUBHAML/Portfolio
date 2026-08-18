@@ -3,12 +3,12 @@ document.addEventListener("DOMContentLoaded", function () {
     // Translation Data
     const translations = {
         en: {
-            marquee_text: `<span>🚀 Member of ScaleX Lab @ IIT Hyderabad</span> <span class="ticker-dot">•</span> <span>🇯🇵 Learning Japanese & Actively Seeking Opportunities in Japan</span> <span class="ticker-dot">•</span> <span>💡 Open for Research & Engineering Roles</span> <span class="ticker-dot">•</span>`,
+            marquee_text: `<span>Member of ScaleX Lab @ IIT Hyderabad</span> <span class="ticker-dot">•</span> <span>Learning Japanese & Actively Seeking Opportunities in Japan</span> <span class="ticker-dot">•</span> <span>Open for Research & Engineering Roles</span> <span class="ticker-dot">•</span>`,
             iith_badge: `<i class="fas fa-graduation-cap"></i> IIT HYDERABAD`,
             hero_title: `Hi, I'm <span class="highlight">SAISHUBHAM</span><br>but you can call me <span class="highlight">Subbu</span>.`,
             typing_text: "I am a member of Scalable Algorithms for Large-Scale Data (ScaleX) Lab.",
             hero_desc: "M.Tech Student in Department of Computer Science at IIT Hyderabad, working in theoretical computer science with focus on algorithms, complexity theory, and mathematical foundations of computing.",
-            btn_cv: "View CV",
+            btn_cv: "View Resume",
             btn_contact: "Contact",
             about_title: "About Me",
             about_desc: "I am currently pursuing M.Tech in Computer Science at IIT Hyderabad. My research interests lie in theoretical computer science, algorithm design, computational complexity, and rigorous mathematical analysis of computation models. I enjoy solving challenging problems that require deep analytical thinking and strong mathematical foundations.",
@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
             achieve2: "Participant – Inter IIT Sports Meet",
             achieve3: 'Solved 200+ algorithmic problems across competitive programming platforms (<a href="https://leetcode.com/u/SAISHUBHAM_LAISETTI/" target="_blank" style="color: #fb923c; font-weight: 600;">LeetCode</a>)',
             achieve4: "Research Assistantship – IIT Hyderabad",
-            achieve5: 'Full Marathon Finisher – NMDC Hyderabad Marathon 2025 (<a href="NMDC_MARATHON_2025.pdf" target="_blank" style="color: #fb923c; font-weight: 600;">View Certificate 📜</a>)',
+            achieve5: 'Full Marathon Finisher – NMDC Hyderabad Marathon 2025 (<a href="NMDC_MARATHON_2025.pdf" id="openCert" style="color: #fb923c; font-weight: 600;">View Certificate</a>)',
             projects_title: "Projects",
             proj0_title: "Autonomous Driving Perception & Tracking Stack",
             proj0_desc: "Built a modular ROS2 autonomous driving pipeline integrating YOLOv8 2D detection, LiDAR processing (RANSAC + DBSCAN), EKF sensor fusion, ByteTrack 3D tracking, and Hybrid A* motion planning evaluated across real-world benchmark datasets.",
@@ -51,12 +51,12 @@ document.addEventListener("DOMContentLoaded", function () {
             contact_title: "Contact"
         },
         ja: {
-            marquee_text: `<span>🚀 IITハイデラバード校 ScaleX Lab 所属</span> <span class="ticker-dot">•</span> <span>🇯🇵 日本語学習中 ＆ 日本国内・日系企業の求人を積極的に捜索中</span> <span class="ticker-dot">•</span> <span>💡 研究・エンジニアリング職のオファー歓迎</span> <span class="ticker-dot">•</span>`,
+            marquee_text: `<span>IITハイデラバード校 ScaleX Lab 所属</span> <span class="ticker-dot">•</span> <span>日本語学習中 ＆ 日本国内・日系企業の求人を積極的に捜索中</span> <span class="ticker-dot">•</span> <span>研究・エンジニアリング職のオファー歓迎</span> <span class="ticker-dot">•</span>`,
             iith_badge: `<i class="fas fa-graduation-cap"></i> インド工科大学ハイデラバード校`,
             hero_title: `こんにちは、<span class="highlight">サイシュバム</span>です。<br>気軽に <span class="highlight">Subbu</span> とお呼びください。`,
             typing_text: "大規模データ向けスケーラブルアルゴリズム（ScaleX）研究室に所属しています。",
             hero_desc: "インド工科大学（IIT）ハイデラバード校 コンピュータサイエンス学科 M.Tech（修士課程）在学中。理論コンピュータサイエンス、アルゴリズム、計算複雑性理論、計算の数学的基礎を専攻。",
-            btn_cv: "CVを見る",
+            btn_cv: "履歴書を見る",
             btn_contact: "お問い合わせ",
             about_title: "私について",
             about_desc: "現在、インド工科大学ハイデラバード校にてコンピュータサイエンスのM.Tech（修士課程）を履修しています。研究分野は理論コンピュータサイエンス、アルゴリズム設計、計算複雑性、および計算モデルの厳密な数学的解析です。深い分析力と強固な数学的基礎を要する難問の解決に情熱を注いでいます。",
@@ -80,8 +80,9 @@ document.addEventListener("DOMContentLoaded", function () {
             achieve2: "Inter IIT スポーツ大会 出場",
             achieve3: '競技プログラミングプラットフォームで200以上のアルゴリズム問題を解決 (<a href="https://leetcode.com/u/SAISHUBHAM_LAISETTI/" target="_blank" style="color: #fb923c; font-weight: 600;">LeetCode</a>)',
             achieve4: "IIT ハイデラバード校 リサーチアシスタント",
-            achieve5: 'フルマラソン 完走 – NMDC ハイデラバードマラソン 2025 (<a href="NMDC_MARATHON_2025.pdf" target="_blank" style="color: #fb923c; font-weight: 600;">認定証を見る 📜</a>)',
+            achieve5: 'フルマラソン 完走 – NMDC ハイデラバードマラソン 2025 (<a href="NMDC_MARATHON_2025.pdf" id="openCert" style="color: #fb923c; font-weight: 600;">認定証を見る</a>)',
             projects_title: "プロジェクト",
+
 
             proj0_title: "自動運転認識・追跡スタック (Autonomous Driving Perception & Tracking)",
             proj0_desc: "YOLOv8 2D物体検出、LiDAR点群処理（RANSAC + DBSCAN）、拡張カルマンフィルタ（EKF）センサーフュージョン、ByteTrack 3D物体追跡、およびHybrid A*運動計画を統合したモジュール型ROS2自動運転パイプラインを構築し、実環境ベンチマークデータセットで評価。",
