@@ -27,7 +27,9 @@ document.addEventListener("DOMContentLoaded", function () {
             course3: "Tensor: Techniques, Algorithms and Applications",
             course4: "Representation Learning",
             course5: "Linear Optimization",
+            course6: "Spoken Japanese Basics",
             achievements_title: "Achievements",
+
             achieve1: "Gold Medalist – College Athletics (800m & 1500m)",
             achieve2: "Participant – Inter IIT Sports Meet",
             achieve3: 'Solved 200+ algorithmic problems across competitive programming platforms (<a href="https://leetcode.com/u/SAISHUBHAM_LAISETTI/" target="_blank" style="color: #fb923c; font-weight: 600;">LeetCode</a>)',
@@ -75,7 +77,9 @@ document.addEventListener("DOMContentLoaded", function () {
             course3: "テンソル: 手法・アルゴリズム・応用",
             course4: "表現学習",
             course5: "線形最適化",
+            course6: "日常日本語会話の基礎",
             achievements_title: "実績・賞罰",
+
             achieve1: "大学陸上競技大会 金メダリスト (800m & 1500m)",
             achieve2: "Inter IIT スポーツ大会 出場",
             achieve3: '競技プログラミングプラットフォームで200以上のアルゴリズム問題を解決 (<a href="https://leetcode.com/u/SAISHUBHAM_LAISETTI/" target="_blank" style="color: #fb923c; font-weight: 600;">LeetCode</a>)',

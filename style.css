@@ -335,6 +335,21 @@ body {
     transition: 0.3s;
 }
 
+.course-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.course-list li {
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+}
+
 .project-card:hover,
 .publication:hover,
 .course-list li:hover,
@@ -342,6 +357,7 @@ body {
     transform: translateY(-3px);
     box-shadow: 0 8px 22px rgba(251, 146, 60, 0.15);
 }
+
 
 /* ================= SKILLS ================= */
 
@@ -588,4 +604,9 @@ body {
     .side-nav {
         right: 10px;
     }
+
+    .course-list {
+        grid-template-columns: 1fr;
+    }
 }
+
