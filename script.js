@@ -47,6 +47,13 @@ document.addEventListener("DOMContentLoaded", function () {
             proj2_desc: "Studied label and feature shift in federated medical imaging environments.",
             proj3_title: "Algorithmic Problem Solving",
             proj3_desc: "Solved graph and optimization problems using efficient C++ implementations.",
+            por_title: "Positions of Responsibility",
+            por1_title: "Volunteer – SPIC MACAY, IIT Hyderabad Chapter",
+            por1_desc: "Contributed to the Society for the Promotion of Indian Classical Music And Culture Amongst Youth (SPIC MACAY) by coordinating cultural concerts, classical music performances, and heritage workshops across the campus.",
+            por2_title: "Volunteer – Entrepreneurship Cell (E-Cell), IIT Hyderabad",
+            por2_desc: "Actively supported campus entrepreneurship initiatives, startup summits, guest speaker sessions, and innovation events to promote a vibrant startup and entrepreneurial culture.",
+            por3_title: "Member – Prayas Club, IIT Hyderabad",
+            por3_desc: "Engaged with Prayas, a student-led social initiative at IIT Hyderabad dedicated to teaching, mentoring, and guiding underprivileged school students—particularly from government schools—to strengthen their academic foundation.",
             skills_title: "Technical Skills",
             skill1: "C++",
             skill2: "Algorithms & Data Structures",
@@ -103,12 +110,20 @@ document.addEventListener("DOMContentLoaded", function () {
             proj2_desc: "連合医療画像環境におけるラベルおよび特徴量の分布シフトを研究。",
             proj3_title: "アルゴリズム問題解決",
             proj3_desc: "効率的なC++実装を用いてグラフ問題および最適化問題を解決。",
+            por_title: "役職・社会貢献活動 (Positions of Responsibility)",
+            por1_title: "ボランティア – SPIC MACAY (インド古典音楽・文化普及協会) IITハイデラバード支部",
+            por1_desc: "インドの伝統文化・古典音楽の普及を目指すSPIC MACAYにて、学内コンサートや伝統文化ワークショップの企画・運営に従事。",
+            por2_title: "ボランティア – アントレプレナーシップ・セル (E-Cell), IITハイデラバード校",
+            por2_desc: "学生の起業家精神の育成とスタートアップ文化の醸成に向け、起業サミット、ピッチコンテスト、講演会の運営をサポート。",
+            por3_title: "メンバー – Prayas Club (教育支援ボランティア), IITハイデラバード校",
+            por3_desc: "公立学校に通う恵まれない環境の生徒たちへの学習指導、教育サポート、進路指導を行う学生主導の社会貢献団体「Prayas」に参加・活動。",
             skills_title: "技術スキル",
             skill1: "C++",
             skill2: "アルゴリズムとデータ構造",
             skill3: "理論コンピュータサイエンス",
             skill4: "Python",
             contact_title: "お問い合わせ"
+
         }
     };
 
