@@ -363,6 +363,71 @@ body {
     box-shadow: 0 8px 22px rgba(251, 146, 60, 0.15);
 }
 
+.project-tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 12px 0;
+}
+
+.tech-badge {
+    background: rgba(251, 146, 60, 0.12);
+    border: 1px solid rgba(251, 146, 60, 0.3);
+    color: #fdba74;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 14px;
+}
+
+.light-mode .tech-badge {
+    background: #ffedd5;
+    border-color: #f97316;
+    color: #c2410c;
+}
+
+.project-bullets {
+    margin-top: 10px;
+    padding-left: 20px;
+    color: #cbd5e1;
+    line-height: 1.75;
+}
+
+.project-bullets li {
+    margin-bottom: 6px;
+}
+
+.light-mode .project-bullets {
+    color: #334155;
+}
+
+.project-links {
+    margin-top: 16px;
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.project-link-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: #38bdf8;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.project-link-btn:hover {
+    color: #7dd3fc;
+    text-decoration: underline;
+}
+
+.light-mode .project-link-btn {
+    color: #0284c7;
+}
+
 
 /* ================= SKILLS ================= */
 
