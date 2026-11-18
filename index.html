@@ -92,7 +92,7 @@
     <h2 data-i18n="about_title">About Me</h2>
     <p data-i18n="about_desc">
     I am pursuing M.Tech in Computer Science & Engineering at IIT Hyderabad (ScaleX Lab).
-    My technical expertise spans Autonomous Driving Perception & Tracking (ROS2, YOLOv8, LiDAR, EKF), AI/ML, Full-Stack Web Development, Data Persistence Systems, and Spoken Japanese.
+    My technical expertise spans Autonomous Driving Perception & Tracking (YOLOv8, LiDAR, multi-object tracking), AI/ML, Full-Stack Web Development, Data Persistence Systems, and Spoken Japanese.
     I enjoy building robust end-to-end systems that solve complex real-world engineering challenges with high performance and mathematical rigor.
     </p>
 </section>
@@ -114,22 +114,20 @@
 
     <!-- Project 1: Autonomous Driving -->
     <div class="project-card">
-        <h3 data-i18n="proj0_title">Autonomous Driving Perception & Tracking System</h3>
+        <h3 data-i18n="proj0_title">Autonomous Driving Perception Benchmark (nuScenes)</h3>
         <div class="project-tech-stack">
-            <span class="tech-badge">ROS2</span>
-            <span class="tech-badge">C++</span>
             <span class="tech-badge">Python</span>
+            <span class="tech-badge">PyTorch</span>
             <span class="tech-badge">YOLOv8</span>
             <span class="tech-badge">LiDAR</span>
-            <span class="tech-badge">EKF</span>
+            <span class="tech-badge">nuScenes</span>
             <span class="tech-badge">ByteTrack</span>
-            <span class="tech-badge">DBSCAN</span>
-            <span class="tech-badge">Hybrid A*</span>
+            <span class="tech-badge">BoT-SORT</span>
         </div>
         <ul class="project-bullets">
-            <li data-i18n="proj0_b1">Reduced localization error ~90% by fusing camera + LiDAR with EKF, achieving 0.12–0.14 m MAE vs. 0.39–1.45 m baselines.</li>
-            <li data-i18n="proj0_b2">Improved tracking accuracy +26.2 pts by combining ByteTrack + EKF, reaching 93.4–94.6% MOTA under occlusion.</li>
-            <li data-i18n="proj0_b3">Enabled end-to-end autonomy by integrating YOLOv8, DBSCAN, LiDAR segmentation into a modular ROS2 pipeline; validated across nuScenes, Waymo Open, and Argoverse 2.</li>
+            <li data-i18n="proj0_b1">Built a reproducible nuScenes benchmark with scene-level splits and COCO-style mAP, comparing zero-shot vs. fine-tuned YOLOv8n across 6 cameras.</li>
+            <li data-i18n="proj0_b2">Fine-tuning raised pedestrian AP@50 from 36.7% to 61.6% and BoT-SORT tracking MOTA from 16.5% to 37.3%; traced a rare-class drop (bus 51% → 8%) to class imbalance.</li>
+            <li data-i18n="proj0_b3">Cut median 3D object-center error from 1.38 m (monocular) to 0.68 m using projected LiDAR depth.</li>
         </ul>
         <div class="project-links">
             <a href="https://github.com/SAISHUBHAML/Autonomous-driving-perception-benchmark" target="_blank" class="project-link-btn" data-i18n="view_repo"><i class="fab fa-github"></i> View Repository</a>
@@ -261,7 +259,7 @@
     </div>
 
     <div class="skill">
-        <p data-i18n="skill2">Autonomous Driving & Perception (ROS2, YOLOv8, LiDAR, EKF, ByteTrack, Hybrid A*)</p>
+        <p data-i18n="skill2">Autonomous Driving & Perception (YOLOv8, LiDAR, ByteTrack/BoT-SORT, nuScenes)</p>
         <div class="progress-bar">
             <div class="progress" data-width="88%"></div>
         </div>

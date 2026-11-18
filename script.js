@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
             btn_cv: "View Resume",
             btn_contact: "Contact",
             about_title: "About Me",
-            about_desc: "I am pursuing M.Tech in Computer Science & Engineering at IIT Hyderabad (ScaleX Lab). My technical expertise spans Autonomous Driving Perception & Tracking (ROS2, YOLOv8, LiDAR, EKF), AI/ML, Full-Stack Web Development, Data Persistence Systems, and Spoken Japanese. I enjoy building robust end-to-end systems that solve complex real-world engineering challenges with high performance and mathematical rigor.",
+            about_desc: "I am pursuing M.Tech in Computer Science & Engineering at IIT Hyderabad (ScaleX Lab). My technical expertise spans Autonomous Driving Perception & Tracking (YOLOv8, LiDAR, multi-object tracking), AI/ML, Full-Stack Web Development, Data Persistence Systems, and Spoken Japanese. I enjoy building robust end-to-end systems that solve complex real-world engineering challenges with high performance and mathematical rigor.",
             
             exp_title: "Work Experience",
             exp1_title: "Web Development and Designing Intern — Oasis Infobyte",
@@ -51,10 +51,10 @@ document.addEventListener("DOMContentLoaded", function () {
             view_repo: "View Repository",
             view_demo: "Live Demo",
 
-            proj0_title: "Autonomous Driving Perception & Tracking System",
-            proj0_b1: "Reduced localization error ~90% by fusing camera + LiDAR with EKF, achieving 0.12–0.14 m MAE vs. 0.39–1.45 m baselines.",
-            proj0_b2: "Improved tracking accuracy +26.2 pts by combining ByteTrack + EKF, reaching 93.4–94.6% MOTA under occlusion.",
-            proj0_b3: "Enabled end-to-end autonomy by integrating YOLOv8, DBSCAN, LiDAR segmentation into a modular ROS2 pipeline; validated across nuScenes, Waymo Open, and Argoverse 2.",
+            proj0_title: "Autonomous Driving Perception Benchmark (nuScenes)",
+            proj0_b1: "Built a reproducible nuScenes benchmark with scene-level splits and COCO-style mAP, comparing zero-shot vs. fine-tuned YOLOv8n across 6 cameras.",
+            proj0_b2: "Fine-tuning raised pedestrian AP@50 from 36.7% to 61.6% and BoT-SORT tracking MOTA from 16.5% to 37.3%; traced a rare-class drop (bus 51% → 8%) to class imbalance.",
+            proj0_b3: "Cut median 3D object-center error from 1.38 m (monocular) to 0.68 m using projected LiDAR depth.",
 
             proj_jlpt_title: "JLPT N5 Trainer — Interactive Japanese Learning Platform",
             proj_jlpt_b1: "Improved learning retention using Leitner 5-box spaced repetition, prioritizing missed vocabulary for adaptive review.",
@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             skills_title: "Technical Skills",
             skill1: "Languages: C++, Python, JavaScript (ES6+), PHP",
-            skill2: "Autonomous Driving & Perception (ROS2, YOLOv8, LiDAR, EKF, ByteTrack, Hybrid A*)",
+            skill2: "Autonomous Driving & Perception (YOLOv8, LiDAR, ByteTrack/BoT-SORT, nuScenes)",
             skill3: "Full-Stack & Web Systems (HTML5/CSS3, IndexedDB, Web Audio/Speech API, Docker, MySQL)",
             skill4: "ML / Deep Learning & Computer Vision (PyTorch, scikit-learn, OpenCV, Hugging Face, BERT)",
             contact_title: "Contact",
@@ -105,7 +105,7 @@ document.addEventListener("DOMContentLoaded", function () {
             btn_cv: "履歴書を見る",
             btn_contact: "お問い合わせ",
             about_title: "私について",
-            about_desc: "現在、インド工科大学ハイデラバード校（ScaleX Lab）にてコンピュータサイエンスのM.Tech（修士課程）を履修しています。専門領域は自動運転認識・追跡（ROS2, YOLOv8, LiDAR, EKF）、AI/ML、フルスタックWeb開発、データ永続化システム、および日本語会話です。高度なパフォーマンスと数学的厳密性を備えた実世界課題のシステム構築に意欲的に取り組んでいます。",
+            about_desc: "現在、インド工科大学ハイデラバード校（ScaleX Lab）にてコンピュータサイエンスのM.Tech（修士課程）を履修しています。専門領域は自動運転認識・追跡（YOLOv8, LiDAR, 多物体追跡）、AI/ML、フルスタックWeb開発、データ永続化システム、および日本語会話です。高度なパフォーマンスと数学的厳密性を備えた実世界課題のシステム構築に意欲的に取り組んでいます。",
 
             exp_title: "職務経歴・インターンシップ",
             exp1_title: "Web開発・デザインインターン — Oasis Infobyte",
@@ -113,7 +113,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             research_title: "研究",
             research_interests_title: "研究分野",
-            tag_perception: "自動運転認識・センサーフュージョン",
+            tag_perception: "自動運転認識",
             tag_cv: "コンピュータビジョン・LiDAR点群処理",
             tag_ml: "機械学習・ディープラーニング",
             tag_complexity: "計算複雑性理論・アルゴリズム",
@@ -145,10 +145,10 @@ document.addEventListener("DOMContentLoaded", function () {
             view_repo: "リポジトリを見る",
             view_demo: "ライブデモを見る",
 
-            proj0_title: "自動運転認識・追跡システム (Autonomous Driving Perception & Tracking)",
-            proj0_b1: "カメラとLiDARのEKFセンサーフュージョンにより位置誤差を約90%削減（MAE 0.12–0.14m）。",
-            proj0_b2: "ByteTrackとEKFの融合により追跡精度を+26.2 pt向上させ、遮蔽環境下で93.4–94.6% MOTAを達成。",
-            proj0_b3: "YOLOv8、DBSCAN、LiDARセグメンテーションを統合したモジュール型ROS2パイプラインを構築し、nuScenes / Waymo / Argoverse 2で評価検証。",
+            proj0_title: "自動運転認識ベンチマーク (nuScenes)",
+            proj0_b1: "シーン単位の分割とCOCO形式のmAPによる再現可能なnuScenesベンチマークを構築し、6台のカメラでゼロショットとファインチューニング済みYOLOv8nを比較。",
+            proj0_b2: "ファインチューニングにより歩行者AP@50を36.7%から61.6%へ、BoT-SORTの追跡MOTAを16.5%から37.3%へ向上。希少クラスの低下（バス 51%→8%）がクラス不均衡に起因することを分析。",
+            proj0_b3: "LiDAR深度の投影により、3D物体中心誤差（中央値）を単眼推定の1.38 mから0.68 mに削減。",
 
             proj_jlpt_title: "JLPT N5 トレーナー — インタラクティブ日本語学習プラットフォーム",
             proj_jlpt_b1: "ライトナー5箱型間隔反復法（Spaced Repetition）を導入し、弱点単語を効率的に定着。",
@@ -184,7 +184,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             skills_title: "技術スキル",
             skill1: "プログラミング言語: C++, Python, JavaScript (ES6+), PHP",
-            skill2: "自動運転・認識: ROS2, YOLOv8, LiDAR, EKF, ByteTrack, Hybrid A*",
+            skill2: "自動運転・認識: YOLOv8, LiDAR, ByteTrack/BoT-SORT, nuScenes",
             skill3: "フルスタック・Web: HTML5/CSS3, IndexedDB, Web Audio/Speech API, Docker, MySQL",
             skill4: "ML / ディープラーニング: PyTorch, scikit-learn, OpenCV, Hugging Face, BERT",
             contact_title: "お問い合わせ",
