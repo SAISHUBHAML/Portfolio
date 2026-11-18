@@ -123,11 +123,15 @@
             <span class="tech-badge">nuScenes</span>
             <span class="tech-badge">ByteTrack</span>
             <span class="tech-badge">BoT-SORT</span>
+            <span class="tech-badge">EKF</span>
+            <span class="tech-badge">DBSCAN</span>
         </div>
         <ul class="project-bullets">
             <li data-i18n="proj0_b1">Built a reproducible nuScenes benchmark with scene-level splits and COCO-style mAP, comparing zero-shot vs. fine-tuned YOLOv8n across 6 cameras.</li>
             <li data-i18n="proj0_b2">Fine-tuning raised pedestrian AP@50 from 36.7% to 61.6% and BoT-SORT tracking MOTA from 16.5% to 37.3%; traced a rare-class drop (bus 51% → 8%) to class imbalance.</li>
             <li data-i18n="proj0_b3">Cut median 3D object-center error from 1.38 m (monocular) to 0.68 m using projected LiDAR depth.</li>
+            <li data-i18n="proj0_b4">Segmented LiDAR point clouds with RANSAC ground removal + DBSCAN (84% object recall within 20 m); labelling clusters with camera detections raised same-class precision from 25% to 81%.</li>
+            <li data-i18n="proj0_b5">Built an EKF multi-camera 3D tracker (range/bearing measurements, Mahalanobis + Hungarian association); using LiDAR range instead of camera-only depth raised MOTA from −12% to 19% and IDF1 from 34% to 48%.</li>
         </ul>
         <div class="project-links">
             <a href="https://github.com/SAISHUBHAML/Autonomous-driving-perception-benchmark" target="_blank" class="project-link-btn" data-i18n="view_repo"><i class="fab fa-github"></i> View Repository</a>
@@ -259,7 +263,7 @@
     </div>
 
     <div class="skill">
-        <p data-i18n="skill2">Autonomous Driving & Perception (YOLOv8, LiDAR, ByteTrack/BoT-SORT, nuScenes)</p>
+        <p data-i18n="skill2">Autonomous Driving & Perception (YOLOv8, LiDAR, DBSCAN, EKF, ByteTrack/BoT-SORT, nuScenes)</p>
         <div class="progress-bar">
             <div class="progress" data-width="88%"></div>
         </div>

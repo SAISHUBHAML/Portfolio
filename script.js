@@ -55,6 +55,8 @@ document.addEventListener("DOMContentLoaded", function () {
             proj0_b1: "Built a reproducible nuScenes benchmark with scene-level splits and COCO-style mAP, comparing zero-shot vs. fine-tuned YOLOv8n across 6 cameras.",
             proj0_b2: "Fine-tuning raised pedestrian AP@50 from 36.7% to 61.6% and BoT-SORT tracking MOTA from 16.5% to 37.3%; traced a rare-class drop (bus 51% → 8%) to class imbalance.",
             proj0_b3: "Cut median 3D object-center error from 1.38 m (monocular) to 0.68 m using projected LiDAR depth.",
+            proj0_b4: "Segmented LiDAR point clouds with RANSAC ground removal + DBSCAN (84% object recall within 20 m); labelling clusters with camera detections raised same-class precision from 25% to 81%.",
+            proj0_b5: "Built an EKF multi-camera 3D tracker (range/bearing measurements, Mahalanobis + Hungarian association); using LiDAR range instead of camera-only depth raised MOTA from −12% to 19% and IDF1 from 34% to 48%.",
 
             proj_jlpt_title: "JLPT N5 Trainer — Interactive Japanese Learning Platform",
             proj_jlpt_b1: "Improved learning retention using Leitner 5-box spaced repetition, prioritizing missed vocabulary for adaptive review.",
@@ -90,7 +92,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             skills_title: "Technical Skills",
             skill1: "Languages: C++, Python, JavaScript (ES6+), PHP",
-            skill2: "Autonomous Driving & Perception (YOLOv8, LiDAR, ByteTrack/BoT-SORT, nuScenes)",
+            skill2: "Autonomous Driving & Perception (YOLOv8, LiDAR, DBSCAN, EKF, ByteTrack/BoT-SORT, nuScenes)",
             skill3: "Full-Stack & Web Systems (HTML5/CSS3, IndexedDB, Web Audio/Speech API, Docker, MySQL)",
             skill4: "ML / Deep Learning & Computer Vision (PyTorch, scikit-learn, OpenCV, Hugging Face, BERT)",
             contact_title: "Contact",
@@ -149,6 +151,8 @@ document.addEventListener("DOMContentLoaded", function () {
             proj0_b1: "シーン単位の分割とCOCO形式のmAPによる再現可能なnuScenesベンチマークを構築し、6台のカメラでゼロショットとファインチューニング済みYOLOv8nを比較。",
             proj0_b2: "ファインチューニングにより歩行者AP@50を36.7%から61.6%へ、BoT-SORTの追跡MOTAを16.5%から37.3%へ向上。希少クラスの低下（バス 51%→8%）がクラス不均衡に起因することを分析。",
             proj0_b3: "LiDAR深度の投影により、3D物体中心誤差（中央値）を単眼推定の1.38 mから0.68 mに削減。",
+            proj0_b4: "RANSACによる地面除去とDBSCANでLiDAR点群をセグメンテーション（20 m以内の物体再現率84%）。カメラ検出でクラスタにラベル付けし、同一クラス適合率を25%から81%に向上。",
+            proj0_b5: "EKFによるマルチカメラ3D追跡器を構築（距離・方位の観測、マハラノビス距離＋ハンガリアン法による対応付け）。カメラのみの深度に代えてLiDAR距離を用いることで、MOTAを−12%から19%、IDF1を34%から48%に向上。",
 
             proj_jlpt_title: "JLPT N5 トレーナー — インタラクティブ日本語学習プラットフォーム",
             proj_jlpt_b1: "ライトナー5箱型間隔反復法（Spaced Repetition）を導入し、弱点単語を効率的に定着。",
@@ -184,7 +188,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             skills_title: "技術スキル",
             skill1: "プログラミング言語: C++, Python, JavaScript (ES6+), PHP",
-            skill2: "自動運転・認識: YOLOv8, LiDAR, ByteTrack/BoT-SORT, nuScenes",
+            skill2: "自動運転・認識: YOLOv8, LiDAR, DBSCAN, EKF, ByteTrack/BoT-SORT, nuScenes",
             skill3: "フルスタック・Web: HTML5/CSS3, IndexedDB, Web Audio/Speech API, Docker, MySQL",
             skill4: "ML / ディープラーニング: PyTorch, scikit-learn, OpenCV, Hugging Face, BERT",
             contact_title: "お問い合わせ",
